@@ -1,0 +1,1 @@
+oci os object list --bucket-name <your-bucket-name> --output json | jq -r '.data[] | select(.name | match("[0-9]{3}-[0-9]{3}-[0-9]{4}")) | .name' 
