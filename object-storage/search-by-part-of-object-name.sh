@@ -1,0 +1,1 @@
+oci os object list --bucket-name <your-bucket-name> --output json --query "data[?contains(\"name\",'<part of the object name to be searched for>')]"
